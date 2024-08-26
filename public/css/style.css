@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F9FB;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+main, header {
+  width: 100vw;
+  background: center / cover no-repeat url("../img/background.png");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2 {
+  color: #fff;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+/* index.erb */
+
+main {
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 23px;
+}
+
+.input-form {
+  margin-top: 58px;
+  border: 4px solid #C360E1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #C360E1;
+  width: 45vw;
+}
+
+.input-form p {
+  background-color: #EBF1F8;
+  padding: 13px 0 13px 19px;
+  border-bottom: 1px solid #E1E5EE;
+  border-radius: 5px 5px 0 0;
+  font-size: 16px;
+}
+
+.input-form div {
+  background-color: #FFFFFF;
+  padding: 20px 19px;
+  border-radius: 0 0 5px 5px;
+}
+
+input[type="text"] {
+  border: 2px solid #C9D7E4;
+  border-radius: 5px;
+  width: 100%;
+  height: 47px;
+  font-size: 13px;
+  font-weight: 500;
+  padding-left: 12px;
+}
+
+input[type="text"]::placeholder {
+  color: #B1B1B1;
+}
+
+.search-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 47px;
+}
+
+input[type="submit"] {
+  background-color: #FF704D;
+  padding: 15px 26px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* result.erb */
+
+header {
+  height: 450px;
+}
+
+.music-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 434px;
+}
+
+.music {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 45vw;
+  margin-top: 57px;
+  padding: 16px 18px;
+  border: 4px solid #C360E1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #C360E1;
+}
+
+.music img {
+  width: 90px;
+  margin-right: 27px;
+  border-radius: 20px;
+}
+
+.music p {
+  font-size: 16px;
+}
+
+.music p:first-child {
+  margin-bottom: 5px;
+}
